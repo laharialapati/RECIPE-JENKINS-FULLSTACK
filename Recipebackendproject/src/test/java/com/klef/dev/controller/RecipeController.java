@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.*;
 
 import com.klef.dev.entity.Recipe;
 import com.klef.dev.service.RecipeService;
-
-@CrossOrigin(origins = "*") // Allow all origins for frontend testing
+@CrossOrigin(origins = "*") // for development only
 @RestController
 @RequestMapping("/recipeapi")
 public class RecipeController {
+    // ...
+}
 
     @Autowired
     private RecipeService recipeService;
